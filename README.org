@@ -1653,6 +1653,18 @@ Add the backend enable auto-completion for LaTeX files.
   (company-auctex-init))
 #+END_SRC
 
+** Nix
+
+Declarative system configuration and totally reproducible builds are the future
+in the enterprise and in personal configurations. These are my two cents, and
+this is my configuration for Nix, the package manager (and the DSL used by it)
+that promises both of them.
+
+#+begin_src emacs-lisp :results silent
+(use-package nix-mode
+  :ensure t)
+#+end_src
+
 * =org-mode=
 ** Basic setup and other habits
 *** Pinning =org-mode=
